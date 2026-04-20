@@ -47,7 +47,3 @@ I still need more practice with advanced table structures, especially for showin
 **What I accepted as-is:** The basic HTML5 boilerplate structure and the first markdown layout.  
 **What I modified manually:** I changed the personal bio information, added my own degree details from Savonia UAS, and fixed the social media links so they match my real accounts.
 
-Week 1 GitHub Pages assignment.
-
-Live page:
-https://mollah3030.github.io/browser-programming/week-1/
