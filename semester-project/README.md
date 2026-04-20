@@ -7,23 +7,18 @@
     </picture>
   </a>
 </p>
+
 <h1 align="center">
-  Medusa
+  Medusa Next.js Starter Template
 </h1>
 
-<h4 align="center">
-  <a href="https://docs.medusajs.com">Documentation</a> |
-  <a href="https://www.medusajs.com">Website</a>
-</h4>
-
 <p align="center">
-  Building blocks for digital commerce
-</p>
+Combine Medusa's modules for your commerce backend with the newest Next.js 15 features for a performant storefront.</p>
+
 <p align="center">
   <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
   </a>
-    <a href="https://www.producthunt.com/posts/medusa"><img src="https://img.shields.io/badge/Product%20Hunt-%231%20Product%20of%20the%20Day-%23DA552E" alt="Product Hunt"></a>
   <a href="https://discord.gg/xpCwq3Kfn8">
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" />
   </a>
@@ -32,45 +27,99 @@
   </a>
 </p>
 
-## Compatibility
+### Prerequisites
 
-This starter is compatible with versions >= 2 of `@medusajs/medusa`. 
+To use the [Next.js Starter Template](https://medusajs.com/nextjs-commerce/), you should have a Medusa server running locally on port 9000.
+For a quick setup, run:
 
-## Getting Started
+```shell
+npx create-medusa-app@latest
+```
 
-Visit the [Quickstart Guide](https://docs.medusajs.com/learn/installation) to set up a server.
+Check out [create-medusa-app docs](https://docs.medusajs.com/learn/installation) for more details and troubleshooting.
 
-Visit the [Docs](https://docs.medusajs.com/learn/installation#get-started) to learn more about our system requirements.
+# Overview
 
-## What is Medusa
+The Medusa Next.js Starter is built with:
 
-Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Medusa](https://medusajs.com/)
 
-Learn more about [Medusa’s architecture](https://docs.medusajs.com/learn/introduction/architecture) and [commerce modules](https://docs.medusajs.com/learn/fundamentals/modules/commerce-modules) in the Docs.
+Features include:
 
-## Build with AI Agents
+- Full ecommerce support:
+  - Product Detail Page
+  - Product Overview Page
+  - Product Collections
+  - Cart
+  - Checkout with Stripe
+  - User Accounts
+  - Order Details
+- Full Next.js 15 support:
+  - App Router
+  - Next fetching/caching
+  - Server Components
+  - Server Actions
+  - Streaming
+  - Static Pre-Rendering
 
-### Claude Code Plugin
+# Quickstart
 
-If you use AI agents like Claude Code, check out the [medusa-dev Claude Code plugin](https://github.com/medusajs/medusa-claude-plugins).
+### Setting up the environment variables
 
-### Other Agents
+Navigate into your projects directory and get your environment variables ready:
 
-If you use AI agents other than Claude Code, copy the [skills directory](https://github.com/medusajs/medusa-claude-plugins/tree/main/plugins/medusa-dev/skills) into your agent's relevant `skills` directory.
+```shell
+cd nextjs-starter-medusa/
+mv .env.template .env.local
+```
 
-### MCP Server
+### Install dependencies
 
-You can also add the MCP server `https://docs.medusajs.com/mcp` to your AI agents to answer questions related to Medusa. The `medusa-dev` Claude Code plugin includes this MCP server by default.
+Use Yarn to install all dependencies.
 
-## Community & Contributions
+```shell
+yarn
+```
 
-The community and core team are available in [GitHub Discussions](https://github.com/medusajs/medusa/discussions), where you can ask for support, discuss roadmap, and share ideas.
+### Start developing
 
-Join our [Discord server](https://discord.com/invite/medusajs) to meet other community members.
+You are now ready to start up your project.
 
-## Other channels
+```shell
+yarn dev
+```
 
-- [GitHub Issues](https://github.com/medusajs/medusa/issues)
-- [Twitter](https://twitter.com/medusajs)
-- [LinkedIn](https://www.linkedin.com/company/medusajs)
-- [Medusa Blog](https://medusajs.com/blog/)
+### Open the code and start customizing
+
+Your site is now running at http://localhost:8000!
+
+# Payment integrations
+
+By default this starter supports the following payment integrations
+
+- [Stripe](https://stripe.com/)
+
+To enable the integrations you need to add the following to your `.env.local` file:
+
+```shell
+NEXT_PUBLIC_STRIPE_KEY=<your-stripe-public-key>
+```
+
+You'll also need to setup the integrations in your Medusa server. See the [Medusa documentation](https://docs.medusajs.com) for more information on how to configure [Stripe](https://docs.medusajs.com/resources/commerce-modules/payment/payment-provider/stripe#main).
+
+# Resources
+
+## Learn more about Medusa
+
+- [Website](https://www.medusajs.com/)
+- [GitHub](https://github.com/medusajs)
+- [Documentation](https://docs.medusajs.com/)
+
+## Learn more about Next.js
+
+- [Website](https://nextjs.org/)
+- [GitHub](https://github.com/vercel/next.js)
+- [Documentation](https://nextjs.org/docs)
